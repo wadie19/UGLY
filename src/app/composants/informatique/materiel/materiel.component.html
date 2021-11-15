@@ -1,0 +1,17 @@
+<div class="card text-center">
+    <div class="card-header">
+        {{p.libelle|titlecase}}    
+    </div>
+    <div class="card-body">
+        <img src="{{p.photo}}"/>
+        <span class="badge badge-pill"
+        [ngClass]="{'badge-primary':p.hautGamme,
+        'badge-dark':!p.hautGamme}">
+        prix:{{p.prix}} DT 
+        <span [ngClass]="{'fa fa-thumbs-up':p.hautGamme}"></span>
+        </span>
+    </div>
+    <div class="card-footer text-muted">
+        <button type="button" class="btn btn-primary" [routerLink]="['/detailmateriel', p.id]">details</button>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<h1 class="text-center">Voici nos bijous</h1><br>
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let pers of materiels">
+            <div class="col-4 pt-3" *ngIf="pers.quantite>0">
+                <wad-materiel [materiel]="pers"></wad-materiel>
+            </div>
+            </ng-container>
+    </div>
+</div>
+    
+
+
