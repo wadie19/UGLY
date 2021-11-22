@@ -12,7 +12,7 @@ export class MaterielService {
         photo: 'assets/Images/Articles/bracelet_jaune_like.jpg',
         marque:'UGLY',
         prix:10,
-        description: 'Bracelet Like',
+        description: 'Bracelet Bike',
         hautGamme: true,
         quantite: 1,
         commentaires:[ {contenu:' satisfaisant', note:3, auteur:'Lionel MESSI', date:new Date(2021,11,4)},
